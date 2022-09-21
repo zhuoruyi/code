@@ -10,6 +10,10 @@
 //	return 0;
 //}
 
+
+
+
+
 //int main(void)
 //{
 //	int x, y, z;
@@ -35,6 +39,11 @@
 //}
 
 
+
+
+
+
+
 //int main(void)
 //{
 //	int a, b, c,d;
@@ -44,6 +53,10 @@
 //
 //	return 0;
 //}
+
+
+
+
 
 
 //int main(void)
@@ -58,6 +71,9 @@
 //}
 
 
+
+
+
 //int main(void)
 //{
 //	double F,C;
@@ -67,6 +83,8 @@
 //
 //	return 0;
 //}
+
+
 
 
 
@@ -85,6 +103,11 @@
 //	return 0;
 //}
 
+
+
+
+
+
 #include<math.h>
 //int main(void)
 //{
@@ -95,6 +118,10 @@
 //	return 0;
 //}
 
+
+
+
+
 //int main(void)
 //{
 //	char a;
@@ -103,6 +130,11 @@
 //
 //	return 0;
 //}
+
+
+
+
+
 
 int main(void)
 {

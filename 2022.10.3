@@ -1,0 +1,45 @@
+//生成3的乘方表
+/*int main()
+{
+	int i,n;
+	int product;
+	scanf("%d", &n);
+	for (i = 0; i <= n; i++)
+	{
+		product = pow(3, i);
+		printf("3^%d=%d\n", i, product);
+	}
+
+	return 0;
+}*/
+
+/*计算输出组合数*/
+double fact(int x, int y)
+{
+	double z=1,a=1,b=1;
+	int i;
+	double product;
+	for (i = 1; i <= x; i++)
+	{
+		z = z * i;
+	}
+	for (i = 1; i <= y; i++)
+	{
+		a = a * i;
+	}
+	for (i = 1; i <= x - y; i++)
+	{
+		b = b * i;
+	}
+	product = z / (a * b);
+	return product;
+}
+
+int main()
+{
+	int n, m;
+	scanf("%d%d", &n,& m);
+	printf("C=%lf\n", fact(n, m));
+
+	return 0;
+}

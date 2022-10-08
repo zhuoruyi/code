@@ -1,0 +1,38 @@
+int F(int x);
+int F(int x)
+{
+	int y;
+	int fact=1;
+	for (y = 1; y <= x; y++)
+	{
+		fact = fact * y;
+	}
+	return fact;
+}
+
+/*int main()
+{
+	int N, i,sum=0,a;
+	scanf("%d", &N);
+	for (i = 1; i <= N; i++)
+	{
+		a = F(i);
+		sum = sum + a;
+	}
+	printf("%d\n", sum);
+	return 0;
+}*/
+
+int main()
+{
+	int  i, n;
+	double S = 1,a,x;
+	scanf("%d%lf", &n, &x);
+	for (i = 1; i <= n; i++)
+	{
+		a = pow(-1, i - 1) * pow(x, i) / F(i);
+		S = S + a;
+	}
+	printf("%lf\n", S);
+	return 0;
+}

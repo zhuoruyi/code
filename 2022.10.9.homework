@@ -1,0 +1,109 @@
+#include<stdio.h>
+#include<math.h>
+
+/*int main()
+{
+	int  i, n;
+	double S = 1,a,x;
+	scanf("%d%lf", &n, &x);
+	for (i = 1; i <= n; i++)
+	{
+		a = pow(-1, i - 1) * pow(x, i) / F(i);
+		S = S + a;
+	}
+	printf("%lf\n", S);
+	return 0;
+}*/
+
+/*
+/*给两个数，求他们的最大公约数*/
+int main()
+{
+	int m = 0;
+	int n = 0;
+	scanf("%d%d", &m, &n);
+	int max = 0;
+	/*假设m和n的最大公约数就是他们之中的较小值*/
+	if (m > n)
+		max = n;
+	else
+		max = m;
+	while (1)
+	{
+		if (m % max == 0 && n % max == 0)
+		{
+			printf("最大公约数就是：%d\n", max);
+			break;
+		}
+		max--;
+	}
+
+	return 0;
+}*/
+
+/*
+/*求素数个数和其平均值*/
+int main()
+{
+	int m, n;
+	int i, count=0;
+	double ave,sum=0;
+	scanf("%d%d", &m, &n);//m<=n
+	for (i = m; i <= n; i++)
+	{
+	int j = 0;
+  	for (j = 2; j < i; j++)
+		{
+			if (i % j == 0)
+			{
+				break;
+			}
+		}
+		if (i == j)
+		{
+			sum = sum + i;
+			count++;
+		}
+	}
+	if (count == 0)
+	{
+		printf("no!\n");
+	}
+	else
+	{
+		ave = sum / count;
+		printf("%d\n", count);
+		printf("%lf\n", ave);
+	}
+	return 0;
+}
+*/
+
+/*求完数*/
+int main()
+{
+	int n;
+	scanf("%d", & n);
+	int i,sum;
+	for (i = 1; i < n; i++)
+	{
+		int j;
+		sum = 0;
+		for (j = 1; j < i; j++)
+		{
+			if (i % j == 0)
+			{
+				sum = sum + j;
+			}
+		}
+		if (sum == i)
+		{
+			printf("%d ", i);
+		}
+	
+	}
+	return 0;
+}
+
+
+
